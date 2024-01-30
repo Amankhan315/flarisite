@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    #navbar1 {
+        height: 120px;
+        width: 100%;
+        /* border: 1px solid; */
+        background-color: rgba(0, 0, 0, 0.938);
+        position: fixed;
+        padding: 1px;
+    }
+
+    #logoborder {
+        height: 70px;
+        width: 200px;
+        /* border: 1px solid; */
+        margin-left: 50px;
+        margin-top: 20px;
+
+    }
+
+    #logoimg1 {
+        height: 100px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+
+    #divbar1 {
+        height: 50px;
+        width: 730px;
+        /* border: 1px solid; */
+        margin-left: 300px;
+        margin-top: -80px;
+        /* color: white; */
+    }
+
+    #contect {
+        height: 50px;
+        width: 100%;
+        /* border: 1px solid; */
+        /* margin-left: 10px; */
+        /* margin-top: 2px; */
+        color: white;
+    }
+
+    #list {
+        margin-top: 20px;
+        margin-left: 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        font-size: 14px;
+        color: white;
+    }
+
+    #list:hover {
+        cursor: pointer;
+    }
+
+    #divline {
+        height: 5px;
+        width: 100%;
+        visibility: hidden;
+        background-color: #2ea3f2;
+        margin-top: 8px;
+    }
+
+    #list:hover #divline {
+        cursor: pointer;
+        margin-top: 4px;
+        visibility: visible;
+    }
+
+    #navbar2 {
+        height: 50px;
+        width: 130px;
+        /* border: 1px solid; */
+        margin-left: 780px;
+        margin-top: -45px;
+    }
+
+    #iconimg {
+        height: 30px;
+        width: 30px;
+        /* border: 1px solid; */
+        margin-top: 10px;
+        margin-left: 10px;
+        display: inline-block;
+
+    }
+
+    #fb {
+        font-size: 18px;
+        color: white;
+    }
+
+    #fb:hover {
+        cursor: pointer;
+
+    }
+
+    #smallcircle {
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        /* border: 1px solid; */
+        margin-left: 950px;
+        margin-top: -45px;
+        cursor: pointer;
+    }
+
+    #mainimgbox {
+        height: 100vh;
+        width: 100%;
+        /* border: 1px solid; */
+        background-image: url(Flaris_ourstory-min.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 1px;
+    }
+
+    #bordername {
+        height: 200px;
+        width: 100%;
+        /* border: 1px solid white; */
+        margin-top: 150px;
+    }
+
+    #bordername2 {
+        height: 80px;
+        width: 300px;
+        /* border: 1px solid white; */
+        margin-left: 530px;
+        margin-top: 80px;
+        display: block;
+    }
+
+    #bordername3 {
+        height: 80px;
+        width: 400px;
+        /* border: 1px solid white; */
+        margin-left: 480px;
+        margin-top: -30px;
+        display: block;
+    }
+
+    #text1 {
+        color: #2ea3f2;
+        /* margin-left: 75px; */
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+    }
+
+    #text2 {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+    }
+
+    #mainborder1 {
+        height: 250vh;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    #bordername4 {
+        height: 80px;
+        width: 100%;
+        /* border: 1px solid; */
+        margin-top: 60px;
+    }
+
+    #nameborder1 {
+        height: 80px;
+        width: 300px;
+        /* border: 1px solid; */
+        margin-left: 500px;
+        margin-top: 25px;
+    }
+
+    #hi {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #borderbox1 {
+        height: 400px;
+        width: 100%;
+        /* border: 1px solid; */
+        margin-top: 30px;
+    }
+
+    #border1 {
+        height: 400px;
+        width: 580px;
+        /* border: 1px solid; */
+        margin-left: 80px;
+        display: inline-block;
+    }
+
+    #img1 {
+        height: 400px;
+        width: 580px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #border2 {
+        height: 400px;
+        width: 500px;
+        border: 1px solid gray;
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #p1 {
+        color: gray;
+        margin-left: 30px;
+        margin-top: 50px;
+        line-height: 140%;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #border3 {
+        height: 400px;
+        width: 500px;
+        border: 1px solid gray;
+        margin-left: 130px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #border4 {
+        height: 400px;
+        width: 580px;
+        border: 1px solid gray;
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #border5 {
+        height: 400px;
+        width: 580px;
+        /* border: 1px solid; */
+        margin-left: 80px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #border6 {
+        height: 400px;
+        width: 500px;
+        border: 1px solid gray;
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #mainborder2 {
+        height: 70vh;
+        width: 100%;
+        /* border: 1px solid; */
+        background-image: url(przyszlosc_filtr.jpg);
+
+        background-size: cover;
+        background-position: 30% 80%;
+        background-position-x: 80%;
+        padding: 1px;
+    }
+
+    #namebox1 {
+        height: 300px;
+        width: 100%;
+        /* border: 1px solid white; */
+        margin-top: 50px;
+    }
+
+    #namebox2 {
+        height: 80px;
+        width: 300px;
+        /* border: 1px solid white; */
+        margin-left: 500px;
+    }
+
+    #namebox3 {
+        height: 200px;
+        width: 850px;
+        /* border: 1px solid white; */
+        margin-left: 250px;
+        margin-top: 20px;
+    }
+
+    #text3 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: lighter;
+    }
+
+    #p2 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    #mainborder3 {
+        height: 80vh;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    #imgbox1 {
+        height: 80vh;
+        width: 600px;
+        /* border: 1px solid; */
+        background-image: url(masz_pytania_filtr.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 1px;
+    }
+
+    #sendbox1 {
+        height: 80vh;
+        width: 745px;
+        /* border: 1px solid; */
+        margin-left: 600px;
+    }
+
+    #borderbar1 {
+        height: 50px;
+        width: 400px;
+        /* border: 1px solid; */
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    #text4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-left: 5px;
+    }
+
+    #boxname1 {
+        height: 420px;
+        width: 740px;
+        /* border: 1px solid; */
+    }
+
+    #inp1 {
+        height: 50px;
+        width: 280px;
+        margin-left: 50px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+
+    #inp2 {
+        height: 150px;
+        width: 600px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    #bt2 {
+        height: 40px;
+        width: 80px;
+        /* margin-top:50px; */
+        margin-left: 550px;
+        background-color: transparent;
+        border: 1px solid #2ea3f2;
+        color: #2ea3f2;
+    }
+
+    #bt2:hover {
+
+        cursor: pointer;
+
+
+    }
+
+    #spn {
+        /* margin-left: 10px; */
+        opacity: 0;
+    }
+
+    #bt2:hover #spn {
+        opacity: 1;
+        margin-left: 10px;
+    }
+
+    #mainborder4 {
+        height: 80vh;
+        width: 100%;
+        border: 1px solid;
+        background-color: rgb(0, 10, 39);
+    }
+
+    #divbar5 {
+
+        height: 300px;
+        width: 600px;
+        /* border: 1px solid white; */
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    #textboxes {
+
+        height: 280px;
+        width: 180px;
+        /* border: 1px solid white; */
+        margin-top: 10px;
+        display: inline-block;
+        margin-left: 10PX;
+        vertical-align: top;
+    }
+
+    #h5 {
+        margin-left: 25px;
+        margin-top: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+
+    }
+
+    #list3 {
+
+        margin-top: 30px;
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #sign {
+        height: 60px;
+        width: 300px;
+        /* border: 1px solid white; */
+        margin-left: 350px;
+        margin-top: -123px;
+        padding: 1px;
+    }
+
+    #mail {
+        height: 50px;
+        width: 400px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    #mail2 {
+        height: 50px;
+        width: 400px;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: bolder;
+        background-color: #00172d;
+        border: 2px solid white;
+        color: white;
+    }
+
+    #mail2:hover {
+        cursor: pointer;
+        color: #122c44;
+    }
+
+    #last {
+        margin-top: 30px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: lighter;
+    }
+
+    #enddiv2 {
+        height: 50px;
+        width: 150px;
+        /* border: 1px solid white; */
+        margin-top: 50px;
+        margin-left: 30px;
+
+    }
+
+    #ilogo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #endbar {
+        height: 2px;
+        width: 1100px;
+        background-color: #2ea3f2;
+        margin-top: 20px;
+        padding: 1px;
+    }
+
+    #endtext1 {
+        height: 50px;
+        width: 250px;
+        /* border: 1px solid white; */
+        margin-top: 30px;
+        color: white;
+
+    }
+
+    #ibox1 {
+        height: 50px;
+        width: 150px;
+        /* border: 1px solid white; */
+        margin-left: 980px;
+        margin-top: -55px;
+
+    }
+
+    #allbox {
+        height: 30px;
+        width: 25px;
+        /* border: 1px solid white; */
+        margin-left: 5px;
+        margin-top: 10px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .color {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div id="navbar1">
+        <a href="D:\html work\Flaris website\flaris imgs\flaris websit.html">
+            <div id="logoborder"><img id="logoimg1" src="logoFlarisSVG.svg" alt="">
+        </a>
+
+        <div id="divbar1">
+            <ul id="contect">
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\aircraft\aircraft.html"
+                        target="_blank">
+                        AIRCRAFT</a>
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\PILOTING COURSES\Untitled-1.html"
+                        target="_blank"> PILOTING COURSES</a>
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\PURCHASE\Untitled-1.html"
+                        target="_blank"> PURCHASE</a>
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\news\Untitled-1.html"
+                    target="_blank"> NEWS</a> 
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\our story\Untitled-1.html"
+                    target="_blank"> OUR STORY </a>
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\press room\press.html"
+                    target="_blank"> PRESS ROOM</a>
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\contact\contact.html"
+                    target="_blank"> CONTACT</a>
+                    <div id="divline"></div>
+                </li>
+            </ul>
+            <div id="navbar2">
+                <div id="iconimg"><i id="fb" class="fa-brands fa-facebook"></i></div>
+                <div id="iconimg"><i id="fb" class="fa-brands fa-youtube"></i></div>
+                <div id="iconimg"><i id="fb" class="fa-brands fa-instagram"></i></div>
+
+            </div>
+            <div id="smallcircle"><img src="iconPLflag-03.svg" alt="" srcset=""></div>
+        </div>
+
+    </div>
+    </div>
+    <div id="mainimgbox">
+        <div id="bordername">
+            <div id="bordername2">
+                <h1 id="text1"><span style="color: #2ea3f2;">›</span> FLARIS <span style="color: #2ea3f2;">‹</span></h1>
+            </div>
+            <div id="bordername3">
+                <p id="text2">OUR STORY</p>
+            </div>
+        </div>
+    </div>
+    <div id="mainborder1">
+        <div id="bordername4">
+
+            <div id="nameborder1">
+                <h1 id="hi"><span style="color: #2ea3f2;">›</span>FLARIS LAR 1<span style="color: #2ea3f2;">‹</span>
+                </h1>
+            </div>
+        </div>
+        <div id="borderbox1">
+            <div id="border1"><img id="img1" src="nasza_historia.jpg" alt="" srcset=""></div>
+            <div id="border2">
+                <p id="p1">The concept of a compact and economical personal jet capable <br> of taking off from any
+                    aeroclub first
+                    appeared at Rafał <br> Ładziński’s studio. For this Polish engineer, entrepreneur, and <br>
+                    visionary leader
+                    it was clear that the world was waiting for such <br> a machine. No one before has successfully
+                    combined
+                    the <br> advantages of a jet engine with economic accessibility and ease <br> of flying. Ładziński
+                    assembled a
+                    team of engineers and that is <br> how this amazing cooperation and adventure involving many <br>
+                    brilliant
+                    experts began. This idea of a personal jet swiftly <br> conquered the hearts of thousands of
+                    enthusiasts
+                    across the <br> globe who keep on supporting us.</p>
+            </div>
+        </div>
+        <div id="nameborder1">
+            <h1 id="hi"><span style="color: #2ea3f2;">›</span> METAL-MASTER<span style="color: #2ea3f2;">‹</span></h1>
+        </div>
+        <div id="borderbox1">
+            <div id="border3">
+                <p id="p1">The first designs and prototypes of Flaris LAR 01 were <br> developed at Metal-Masters
+                    specializing
+                    in modern <br> technological lines in the automotive industry. The company, <br> founded by Sylwia
+                    and Rafał Ładziński, became a natural <br> incubator for innovative solutions for the new jet, and
+                    22 <br> obtained patents seem to confirm this. The project has been <br> co-funded by the European
+                    Union under the Innovative <br> Economy Operation Programme since 2009. Metal-Masters <br> invited
+                    to the project the leading Polish Institutes, including <br> WAT (Military Technical Academy), ILOT,
+                    PW, ITWL.</p>
+            </div>
+            <div id="border4"><img id="img1" src="metal_master.jpg" alt=""></div>
+        </div>
+        <div id="nameborder1">
+            <h1 id="hi"><span style="color: #2ea3f2;">›</span>FLARIS<span style="color: #2ea3f2;">‹</span></h1>
+        </div>
+        <div id="borderbox1">
+            <div id="border5"><img id="img1" src="flaris.jpg" alt=""></div>
+            <div id="border6">
+                <p id="p1">The FLARIS company was established in 2012 for the purpose <br> of serial production of LAR
+                    01. It is also responsible for the <br> promotion and sales of its products. Flaris brand is
+                    planning <br> to expand to a wider variety of aircraft constructions. <br> Innovation and
+                    dauntlessness in taking on demanding <br> technological challenges, engineering, production, and
+                    <br> popularization of affordable GA aircraft will be the unique <br> features of the brand.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="mainborder2">
+        <div id="namebox1">
+            <div id="namebox2">
+                <h1 id="text3"><span style="color: #2ea3f2;">›</span>THE FUTURE<span style="color: #2ea3f2;">‹</span>
+                </h1>
+            </div>
+            <div id="namebox3">
+                <p id="p2">We believe in progress driven by innovation. We are not afraid of crossing the lines and
+                    thinking <br> outside the box. The future is a challenge we approach with passion and optimism. We
+                    hope that <br> the groundbreaking construction of LAR 01 is just the first step in a magnificent
+                    journey to the top <br> of the global aviation products market.</p>
+            </div>
+        </div>
+    </div>
+    <div id="mainborder3">
+        <div id="imgbox1">
+            <div id="sendbox1">
+                <div id="borderbar1">
+                    <h1 id="text4"><span style="color: #2ea3f2;">›</span>GOT QUESTIONS? CONTACT US</h1>
+                </div>
+                <div id="boxname1">
+                    <input type="text" placeholder="first name" id="inp1">
+                    <input type="text" placeholder="E=mail" id="inp1">
+                    <input type="text" placeholder="last name" id="inp1">
+                    <input type="text" placeholder="Phone number" id="inp1">
+                    <textarea placeholder="your message" id="inp2" cols="30" rows="10"></textarea><button id="bt2"><span
+                            style="color: #2ea3f2;">Send</span><span id="spn" style="color: #2ea3f2;">></span></button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div id="mainborder4">
+        <div id="divbar5">
+            <div id="textboxes">
+                <h1 id="h5">Legal</h1>
+                <ul>
+                    <li id="list3">GDPR</li>
+                    <li id="list3">Privacy policy</li>
+                    <li id="list3">Cookies</li>
+                </ul>
+            </div>
+            <div id="textboxes">
+                <h1 id="h5">About</h1>
+                <ul>
+                    <li id="list3">Press room</li>
+                    <li id="list3">Manufacturer</li>
+                </ul>
+            </div>
+            <div id="textboxes">
+                <h1 id="h5">Informations</h1>
+                <ul>
+                    <li id="list3">FAQ</li>
+                    <li id="list3">News</li>
+
+                </ul>
+                <div id="sign">
+                    <h1 id="h5">Sign up to our newsletter</h1>
+                    <input type="text" id="mail">
+                    <button id="mail2">sign up </button>
+                    <h1 id="last">Form protected by reCAPTCHA and Google</h1>
+                </div>
+
+            </div>
+            <div id="enddiv2"><img id="ilogo" src="LOGO_FLARIS_white-1.png" alt="">
+                <div id="endbar">
+                    <div id="endtext1">
+                        <p id="text8">© 2022 Flaris. All rights reserved.</p>
+
+                    </div>
+                    <div id="ibox1">
+                        <div id="allbox"><i style="color: white;" class="fa-brands fa-facebook"></i></div>
+                        <div id="allbox"><i style="color: white;" class="fa-brands fa-youtube"></i></div>
+                        <div id="allbox"><i style="color: white;" class="fa-brands fa-instagram"></i></div>
+                    </div>
+
+
+
+
+
+
+</body>
+
+</html>

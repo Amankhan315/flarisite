@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    #parentdiv {
+        height: 120px;
+        width: 100%;
+        /* border: 1px solid; */
+
+        background-color: rgba(0, 0, 0, 0.938);
+        position: fixed;
+        padding: 1px;
+    }
+
+    #logochlid {
+        height: 70px;
+        width: 200px;
+        /* border: 1px solid; */
+        margin-left: 50px;
+        margin-top: 20px;
+
+    }
+
+    #logoimg {
+        height: 100px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+
+    #navbar {
+        height: 50px;
+        width: 730px;
+        /* border: 1px solid; */
+        margin-left: 300px;
+        margin-top: -80px;
+        color: white;
+    }
+
+    #contect {
+        height: 50px;
+        width: 100%;
+        /* border: 1px solid; */
+        /* margin-left: 10px; */
+        /* margin-top: 2px; */
+        color: white;
+    }
+
+    #list {
+        margin-top: 20px;
+        margin-left: 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        font-size: 14px;
+        color: white;
+    }
+
+    #list:hover {
+        cursor: pointer;
+    }
+
+    #divline {
+        height: 5px;
+        width: 100%;
+        visibility: hidden;
+        background-color: #2ea3f2;
+        margin-top: 8px;
+    }
+
+    #list:hover #divline {
+        cursor: pointer;
+        margin-top: 4px;
+        visibility: visible;
+    }
+
+    #navbar2 {
+        height: 50px;
+        width: 130px;
+        /* border: 1px solid; */
+        margin-left: 780px;
+        margin-top: -45px;
+    }
+
+    #iconimg {
+        height: 30px;
+        width: 30px;
+        /* border: 1px solid; */
+        margin-top: 8px;
+        margin-left: 10px;
+        display: inline-block;
+
+    }
+
+    #fb {
+        font-size: 18px;
+        color: white;
+    }
+
+    #fb:hover {
+        cursor: pointer;
+
+    }
+
+
+    #smallcircle {
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        /* border: 1px solid; */
+        margin-left: 1250px;
+        margin-top: -38px;
+        cursor: pointer;
+    }
+
+    #parentbox1 {
+        height: 110vh;
+        width: 100%;
+        /* border: 1px solid; */
+        background-image: url(Flaris_Header_info_prasowe.jpg);
+        background-position: center;
+        background-size: cover;
+        background-position-y: 60px;
+        padding: 1px;
+    }
+
+    #border1 {
+        height: 30vh;
+        width: 100%;
+        /* border: 1px solid white; */
+        margin-top: 180px;
+    }
+
+    #border2 {
+        height: 80px;
+        width: 300px;
+        /* border: 1px solid white; */
+        margin-left: 500px;
+    }
+
+    #border3 {
+        height: 100px;
+        width: 500px;
+        /* border: 1px solid white; */
+        margin-left: 400px;
+    }
+
+    #bordertext1 {
+        color: #2ea3f2;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 80px;
+        font-weight: lighter;
+    }
+
+    #bordertext2 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    #downscroll {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        margin-left: 650px;
+        margin-top: 300px;
+        cursor: pointer;
+    }
+
+    #parentbox2 {
+        height: 330vh;
+        width: 100%;
+        /* border: 1px solid red; */
+        padding: 1px;
+    }
+
+    #chlidbox1 {
+        height: 300px;
+        width: 89%;
+        border-top: 2px solid #2ea3f2;
+        margin-top: 50px;
+        margin-left: 80px;
+        padding: 1px;
+    }
+
+    #chliddiv1 {
+        height: 300px;
+        width: 400px;
+        /* border: 1px solid gray; */
+        display: block;
+        background-image: url(1500835_789050451122048_35941015_o-1080x675.jpg);
+        /* background-position: center; */
+        background-size: 100% 100%;
+        /* background-size: cover; */
+        cursor: pointer;
+
+
+    }
+
+    #chliddiv2 {
+        height: 300px;
+        width: 400px;
+        /* border: 1px solid red; */
+        display: block;
+        background-image: url(WieslawCena_DominikPunda_FlarisLar1_2-766x675.jpg);
+        /* background-position: center; */
+        background-size: 100% 100%;
+        /* background-size: cover; */
+        cursor: pointer;
+
+
+    }
+
+    #chliddiv3 {
+        height: 300px;
+        width: 400px;
+        /* border: 1px solid red; */
+        display: block;
+        background-image: url(Flaris-na-targach-2-1024x675.jpeg);
+        /* background-position: center; */
+        background-size: 100% 100%;
+        /* background-size: cover; */
+        cursor: pointer;
+
+
+    }
+
+    #chliddiv4 {
+        height: 300px;
+        width: 400px;
+        /* border: 1px solid red; */
+        display: block;
+        background-image: url(Flaris-na-targach-1-1080x675.jpeg);
+        /* background-position: center; */
+        background-size: 100% 100%;
+        /* background-size: cover; */
+        cursor: pointer;
+
+
+    }
+
+    #chliddiv5 {
+        height: 300px;
+        width: 400px;
+        /* border: 1px solid red; */
+        display: block;
+        background-image: url(Flaris-Mistrzowstwa-Swiata-Modelarstwa_1-1080x675.jpeg);
+        /* background-position: center; */
+        background-size: 100% 100%;
+        /* background-size: cover; */
+        cursor: pointer;
+
+
+    }
+
+    #chliddiv6 {
+        height: 300px;
+        width: 400px;
+        /* border: 1px solid red; */
+        display: block;
+        background-image: url(maciejchyra_com-5DS_0089-scaled-1-1080x675.jpg);
+        /* background-position: center; */
+        background-size: 100% 100%;
+        /* background-size: cover; */
+        cursor: pointer;
+
+
+    }
+
+    #chlidbox2 {
+        height: 300px;
+        width: 798px;
+        border: 1px solid gray;
+        display: inline-block;
+        margin-left: 400px;
+        vertical-align: top;
+
+
+
+
+    }
+
+    #text1 {
+        color: #2ea3f2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 20px;
+
+    }
+
+    #ptext {
+        color: gray;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #text2 {
+        color: gray;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #parentbox3 {
+        height: 500px;
+        width: 100%;
+        border: 1px solid;
+        background-color: rgb(0, 9, 38);
+        padding: 1px;
+    }
+
+    #divbar5 {
+
+        height: 300px;
+        width: 600px;
+        /* border: 1px solid white; */
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    #textboxes {
+        height: 280px;
+        width: 180px;
+        /* border: 1px solid white; */
+        margin-top: 10px;
+        display: inline-block;
+        margin-left: 10PX;
+        vertical-align: top;
+    }
+
+    #h5 {
+        margin-left: 25px;
+        margin-top: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+
+    }
+
+    #list3 {
+
+        margin-top: 30px;
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+    #sign {
+        height: 60px;
+        width: 300px;
+        /* border: 1px solid white; */
+        margin-left: 350px;
+        margin-top: -123px;
+        padding: 1px;
+    }
+
+    #mail {
+        height: 50px;
+        width: 400px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    #mail2 {
+        height: 50px;
+        width: 400px;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: bolder;
+        background-color: #00172d;
+        border: 2px solid white;
+        color: white;
+    }
+
+    #mail2:hover {
+        cursor: pointer;
+        color: #122c44;
+    }
+
+    #last {
+        margin-top: 30px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: lighter;
+    }
+
+    #enddiv2 {
+        height: 50px;
+        width: 150px;
+        /* border: 1px solid white; */
+        margin-top: 18px;
+        margin-left: 30px;
+
+    }
+
+    #ilogo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #endbar {
+        height: 2px;
+        width: 1100px;
+        background-color: #2ea3f2;
+        margin-top: 20px;
+        padding: 1px;
+    }
+
+    #endtext1 {
+        height: 50px;
+        width: 250px;
+        /* border: 1px solid white; */
+        margin-top: 30px;
+        color: white;
+
+    }
+
+    #text8 {
+        line-height: 140%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-top: -15px;
+    }
+
+    #ibox1 {
+        height: 50px;
+        width: 150px;
+        /* border: 1px solid white; */
+        margin-left: 980px;
+        margin-top: 20px;
+
+    }
+
+    #allbox {
+        height: 30px;
+        width: 25px;
+        /* border: 1px solid white; */
+        margin-left: 5px;
+        margin-top: 10px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    #bt1 {
+        height: 50px;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 1090px;
+        border-radius: 10px;
+        background-color: #2ea3f2;
+        font-weight: bolder;
+        color: white;
+    }
+
+    #bt1:hover {
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .color {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div id="parentdiv">
+        <a href="D:\html work\Flaris website\flaris imgs\flaris websit.html">
+            <div id="logochlid"><img id="logoimg" src="logoFlarisSVG.svg" alt="">
+        </a>
+
+        <div id="navbar">
+            <ul id="contect">
+                <li id="list">
+                    <a  class="color" href="D:\html work\Flaris website\flaris imgs\aircraft\aircraft.html" target="_blank">
+                        AIRCRAFT</a>
+
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\PILOTING COURSES\Untitled-1.html"
+                    target="_blank"> PILOTING COURSES</a>
+                     <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\PURCHASE\Untitled-1.html"
+                    target="_blank"> PURCHASE</a>
+                     <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\news\Untitled-1.html"
+                    target="_blank"> NEWS</a>
+                   
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\our story\Untitled-1.html"
+                    target="_blank"> OUR STORY </a>
+                     <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\press room\press.html"
+                    target="_blank"> PRESS ROOM</a>
+                    <div id="divline"></div>
+                </li>
+                <li id="list">
+                    <a class="color" href="D:\html work\Flaris website\flaris imgs\contact\contact.html"
+                    target="_blank"> CONTACT</a>
+                     <div id="divline"></div>
+                </li>
+            </ul>
+            <div id="navbar2">
+                <div id="iconimg"><i id="fb" class="fa-brands fa-facebook"></i></div>
+                <div id="iconimg"><i id="fb" class="fa-brands fa-youtube"></i></div>
+                <div id="iconimg"><i id="fb" class="fa-brands fa-instagram"></i></div>
+
+            </div>
+
+
+        </div>
+        <div id="smallcircle"><img src="iconPLflag-03.svg" alt="" srcset=""></div>
+    </div>
+    </div>
+    <div id="parentbox1">
+        <div id="border1">
+            <div id="border2">
+                <h1 id="bordertext1"><span style="color: #2ea3f2;">›</span>FLARIS<span style="color: #2ea3f2;">‹</span>
+                </h1>
+            </div>
+            <div id="border3">
+                <h4 id="bordertext2">NEWS AND PRESS RELEASES</h4>
+            </div>
+        </div>
+        <div id="downscroll"><i style="color:white;" class="fa-solid fa-angle-down"></i></div>
+    </div>
+    <div id="parentbox2">
+        <div id="chlidbox1">
+            <div id="chliddiv1">
+                <div id="chlidbox2">
+                    <h3 id="text1">Merry Christmas</h3>
+                    <p id="ptext">gru 23, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div id="chlidbox1">
+            <div id="chliddiv2">
+                <div id="chlidbox2">
+                    <h3 id="text1">Two pilots aboard Flaris</h3>
+                    <p id="ptext">wrz 15, 2022</p>
+                    <p id="text2">Today, for the first time, the FLARIS LAR 1 plane had two test pilots on board!
+                        Wieslaw Cena and <br> Dominik Punda (both in the photos) sat at the controls. They performed
+                        five 10-minute flights.</p>
+                </div>
+            </div>
+        </div>
+        <div id="chlidbox1">
+            <div id="chliddiv3">
+                <div id="chlidbox2">
+                    <h3 id="text1">Flaris at the MSPO Exhibition in Kielce!</h3>
+                    <p id="ptext">wrz 12, 2022</p>
+                    <p id="text2">Fans of the FLARIS LAR 1 passenger business jet had the opportunity to get acquainted
+                        with <br> what it offers during the XXX MSPO International Defense Industry Exhibition, which
+                        took
+                        place <br> from 6 to 9 September 2022 in Kielce.</p>
+                </div>
+            </div>
+        </div>
+        <div id="chlidbox1">
+            <div id="chliddiv4">
+                <div id="chlidbox2">
+                    <h3 id="text1">Flaris will be at the MSPO Exhibition in Kielce!</h3>
+                    <p id="ptext">wrz 3, 2022</p>
+                    <p id="text2">Fans of the FLARIS LAR 1 passenger business jet will have the opportunity to get
+                        acquainted with <br> what it offers during the XXX International Defense Industry Exhibition
+                        MSPO, which will take <br> place from 6 to 9 September 2022 in Kielce.</p>
+                </div>
+            </div>
+        </div>
+        <div id="chlidbox1">
+            <div id="chliddiv5">
+                <div id="chlidbox2">
+                    <h3 id="text1">Flaris will be at the MSPO Exhibition in Kielce!</h3>
+                    <p id="ptext">sie 13, 2022</p>
+                    <p id="text2">In the FAI World Championships for Control Line Model Aircraft for Seniors and Juniors
+                        <br> in Wloclawek, an athlete sponsored by the manufacturer of the FLARIS LAR 1 aircraft won 2nd
+                        <br> place. Her name is Nandintsetseg Nomin and she is from Mongolia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="chlidbox1">
+            <div id="chliddiv6">
+                <div id="chlidbox2">
+                    <h3 id="text1">Flaris will be at the MSPO Exhibition in Kielce!</h3>
+                    <p id="ptext">paź 1, 2021</p>
+                    <p id="text2">Today, a video featuring the world’s fastest single-engine business jet, the Flaris
+                        Lar 1, was <br> released for the first time on YouTube…</p>
+                </div><button id="bt1">ALL post</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="parentbox3">
+        <div id="divbar5">
+            <div id="textboxes">
+                <h1 id="h5">Legal</h1>
+                <ul>
+                    <li id="list3">GDPR</li>
+                    <li id="list3">Privacy policy</li>
+                    <li id="list3">Cookies</li>
+                </ul>
+            </div>
+            <div id="textboxes">
+                <h1 id="h5">About</h1>
+                <ul>
+                    <li id="list3">Press room</li>
+                    <li id="list3">Manufacturer</li>
+                </ul>
+            </div>
+            <div id="textboxes">
+                <h1 id="h5">Informations</h1>
+                <ul>
+                    <li id="list3">FAQ</li>
+                    <li id="list3">News</li>
+
+                </ul>
+                <div id="sign">
+                    <h1 id="h5">Sign up to our newsletter</h1>
+                    <input type="text" id="mail">
+                    <button id="mail2">sign up </button>
+                    <h1 id="last">Form protected by reCAPTCHA and Google</h1>
+                </div>
+
+
+
+
+            </div>
+            <div id="enddiv2"><img id="ilogo" src="LOGO_FLARIS_white-1.png" alt="">
+                <div id="endbar">
+                    <div id="endtext1">
+                        <p id="text8">© 2022 Flaris. All rights reserved.</p>
+
+                    </div>
+                </div>
+                <div id="ibox1">
+                    <div id="allbox"><i style="color: white;" class="fa-brands fa-facebook"></i></div>
+                    <div id="allbox"><i style="color: white;" class="fa-brands fa-youtube"></i></div>
+                    <div id="allbox"><i style="color: white;" class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+
+</body>
+
+</html>

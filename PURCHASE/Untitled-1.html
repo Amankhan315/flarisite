@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURCHASE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    #maindiv {
+        height: 120px;
+        width: 100%;
+        /* border: 1px solid; */
+        background-color: rgba(0, 0, 0, 0.938);
+        position: fixed;
+        padding: 1px;
+
+    }
+
+    #logoborder {
+        height: 70px;
+        width: 200px;
+        /* border: 1px solid; */
+        margin-left: 50px;
+        margin-top: 20px;
+
+    }
+
+    #logoimg {
+        height: 100px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+
+    #navbar1 {
+        height: 50px;
+        width: 730px;
+        /* border: 1px solid; */
+        margin-left: 300px;
+        margin-top: -80px;
+        color: white;
+    }
+
+    #contect {
+        height: 50px;
+        width: 100%;
+        /* border: 1px solid; */
+        /* margin-left: 10px; */
+        /* margin-top: 2px; */
+        color: white;
+    }
+
+    #list {
+        margin-top: 20px;
+        margin-left: 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        font-size: 14px;
+        color: white;
+    }
+
+    #list:hover {
+        cursor: pointer;
+    }
+
+    #divline {
+        height: 5px;
+        width: 100%;
+        visibility: hidden;
+        background-color: #2ea3f2;
+        margin-top: 8px;
+    }
+
+    #list:hover #divline {
+        cursor: pointer;
+        margin-top: 4px;
+        visibility: visible;
+    }
+
+    #navbar2 {
+        height: 50px;
+        width: 130px;
+        /* border: 1px solid; */
+        margin-left: 780px;
+        margin-top: -45px;
+    }
+
+    #iconimg {
+        height: 30px;
+        width: 30px;
+        /* border: 1px solid; */
+        margin-top: 8px;
+        margin-left: 10px;
+        display: inline-block;
+
+    }
+
+    #fb {
+        font-size: 18px;
+        color: white;
+    }
+
+    #fb:hover {
+        cursor: pointer;
+
+    }
+
+    #smallcircle {
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        /* border: 1px solid; */
+        margin-left: 1250px;
+        margin-top: -38px;
+        cursor: pointer;
+    }
+
+    #maindiv2 {
+        height: 700px;
+        width: 100%;
+        /* border: 1px solid; */
+        background-image: url(Flaris_PURCHASE2-min.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 1px;
+    }
+
+    #navborder1 {
+        height: 200px;
+        width: 100%;
+        /* border: 1px solid white; */
+        margin-top: 150px;
+    }
+
+    #navborder2 {
+        height: 50px;
+        width: 500px;
+        /* border: 1px solid white; */
+        margin-left: 430px;
+    }
+
+    #text1 {
+        color: #2ea3f2;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 26px;
+        margin-left: 15px;
+    }
+
+    #text2 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 35px;
+        font-weight: lighter;
+    }
+
+    #downscroll {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        margin-left: 680px;
+        margin-top: 380px;
+        cursor: pointer;
+    }
+
+    #maindiv3 {
+        height: 830px;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    #navborder3 {
+        height: 200px;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    #navborder4 {
+        height: 50px;
+        width: 480px;
+        /* border: 1px solid; */
+        margin-left: 455px;
+        margin-top: 20px;
+    }
+
+    #text3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+    }
+
+    #navborder5 {
+        height: 100px;
+        width: 800px;
+        /* border: 1px solid; */
+        margin-left: 280px;
+        margin-top: 10px;
+    }
+
+    #ptext {
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 5px;
+        color: gray;
+        font-weight: lighter;
+
+    }
+
+    #divbox1 {
+        height: 500px;
+        width: 800px;
+        /* border: 1px solid; */
+        /* margin-left: 80px; */
+        margin-top: 30px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #img1 {
+        height: 500px;
+        width: 800px;
+    }
+
+    #divbox2 {
+        height: 580px;
+        width: 430px;
+        border: 1px solid gray;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: inline-block;
+    }
+
+    #navborder6 {
+        height: 50px;
+        width: 250px;
+        /* border: 1px solid; */
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+
+    #text4 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: 80px;
+    }
+
+    #ptext2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        margin-top: 10px;
+        color: gray;
+        line-height: 150%;
+
+    }
+
+    #navborder7 {
+        height: 320px;
+        width: 380px;
+        /* border: 1px solid; */
+        margin-top: 50px;
+    }
+
+    #maindiv4 {
+        height: 530px;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    #divbox3 {
+        height: 300px;
+        width: 500px;
+        /* border: 1px solid; */
+        margin-top: 10px;
+    }
+
+    #navborder8 {
+        height: 80px;
+        width: 300px;
+        /* border: 1px solid; */
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    #ptext3 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        margin-top: 30px;
+        line-height: 140%;
+
+
+    }
+
+    #divbox4 {
+        height: 500px;
+        width: 800px;
+        /* border: 1px solid; */
+        margin-left: 495px;
+        margin-top: -172px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+
+    #maindiv5 {
+        height: 550px;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    #divbox5 {
+        height: 500px;
+        width: 800px;
+        border: 1px solid;
+        /* margin-left: 495px; */
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #divbox6 {
+        height: 300px;
+        width: 500px;
+        /* border: 1px solid; */
+        margin-top: -500px;
+        margin-left: 830px;
+    }
+
+    #navborder9 {
+        height: 80px;
+        width: 300px;
+        /* border: 1px solid; */
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    #maindiv6 {
+        height: 510px;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    #divbox7 {
+        height: 500px;
+        width: 480px;
+        /* border: 1px solid; */
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    #divbox8 {
+        height: 500px;
+        width: 800px;
+        /* border: 1px solid; */
+        display: inline-block;
+        margin-left: 60px;
+
+    }
+
+    #maindiv7 {
+        height: 225vh;
+        width: 100%;
+        /* border: 1px solid white; */
+        background-color: rgb(30, 30, 30);
+    }
+
+    #divbox9 {
+        height: 500px;
+        width: 100%;
+        /* border: 1px solid white; */
+        padding: 1px;
+    }
+
+    #chlid {
+        height: 400px;
+        width: 58%;
+        /* border: 1px solid white; */
+        display: inline-block;
+        vertical-align: top;
+        background-image: url(./enface-4.png);
+        background-position: left;
+        background-size: 160% 180%;
+    }
+
+    #chlid2 {
+        height: 490px;
+        width: 40%;
+        border: 1px solid white;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #borderchlid {
+        height: 80px;
+        width: 300px;
+        border: 1px solid white;
+    }
+
+    #heading {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-top: 30px;
+    }
+
+    #textbar {
+        height: 300px;
+        width: 500px;
+        border: 1px solid white;
+    }
+
+    #ptext4 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-top: 30px;
+        line-height: 140%;
+
+
+    }
+
+    #bt1 {
+        height: 50px;
+        width: 160px;
+        margin-left: 150px;
+        margin-top: 110px;
+        background-color: transparent;
+        border: 1px solid #2ea3f2;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        color: #2ea3f2;
+    }
+
+    #bt1:hover {
+        cursor: pointer;
+        background-color: #2ea3f2;
+        color: white;
+    }
+
+    #divbox10 {
+        height: 500px;
+        width: 100%;
+        /* border: 1px solid white; */
+        padding: 1px;
+    }
+
+    #chlid3 {
+        height: 400px;
+        width: 58%;
+        /* border: 1px solid white; */
+        display: inline-block;
+        background-image: url(leasing.png);
+        background-position: center;
+        background-size: cover;
+        background-size: 80% 100%;
+
+    }
+
+    #borderchlid2 {
+        height: 80px;
+        width: 300px;
+        border: 1px solid white;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+    #divbox11 {
+        height: 500px;
+        width: 100%;
+        /* border: 1px solid white; */
+        padding: 1px;
+    }
+
+    #chlid4 {
+        height: 400px;
+        width: 58%;
+        border: 1px solid white;
+        display: inline-block;
+        background-image: url(wynajem.png);
+        background-size: cover;
+    }
+    .color {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div id="maindiv">
+        <a href="D:\html work\Flaris website\flaris imgs\flaris websit.html">
+            <div id="logoborder"><img id="logoimg" src="logoFlarisSVG.svg" alt="">
+        </a>
+      
+            <div id="navbar1">
+                <ul id="contect">
+                    <li id="list">
+                        <a  class="color" href="D:\html work\Flaris website\flaris imgs\aircraft\aircraft.html" target="_blank">
+                            AIRCRAFT</a>
+                         <div id="divline"></div>
+                    </li>
+                    <li id="list">
+                        <a class="color" href="D:\html work\Flaris website\flaris imgs\PILOTING COURSES\Untitled-1.html"
+                        target="_blank"> PILOTING COURSES</a>
+                         <div id="divline"></div>
+                    </li>
+                    <li id="list">
+                        <a class="color" href="D:\html work\Flaris website\flaris imgs\PURCHASE\Untitled-1.html"
+                        target="_blank"> PURCHASE</a>
+                         <div id="divline"></div>
+                    </li>
+                    <li id="list">
+                        <a class="color" href="D:\html work\Flaris website\flaris imgs\news\Untitled-1.html"
+                        target="_blank"> NEWS</a>
+                        <div id="divline"></div>
+                    </li>
+                    <li id="list">
+                        <a class="color" href="D:\html work\Flaris website\flaris imgs\our story\Untitled-1.html"
+                        target="_blank"> OUR STORY </a>
+                         <div id="divline"></div>
+                    </li>
+                    <li id="list">
+                        <a class="color" href="D:\html work\Flaris website\flaris imgs\press room\press.html"
+                        target="_blank"> PRESS ROOM</a>
+                     <div id="divline"></div>
+                    </li>
+                    <li id="list">
+                        <a class="color" href="D:\html work\Flaris website\flaris imgs\contact\contact.html"
+                        target="_blank"> CONTACT</a>
+                         <div id="divline"></div>
+                    </li>
+                </ul>
+                <div id="navbar2">
+                    <div id="iconimg"><i id="fb" class="fa-brands fa-facebook"></i></div>
+                    <div id="iconimg"><i id="fb" class="fa-brands fa-youtube"></i></div>
+                    <div id="iconimg"><i id="fb" class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+            <div id="smallcircle"><img src="iconPLflag-03.svg" alt="" srcset=""></div>
+        </div>
+
+    </div>
+    <div id="maindiv2">
+        <div id="navborder1">
+            <div id="navborder2">
+                <h1 id="text1"><span style="color: #2ea3f2;">›</span> PURCHASE, LEASING, OR SHARING <span
+                        style="color: #2ea3f2;">‹</span></h1>
+
+            </div>
+            <p id="text2">CHOOSE YOUR WAY OF USING THE LAR 01</p>
+            <div id="downscroll"><i style="color:white;" class="fa-solid fa-angle-down"></i></div>
+        </div>
+    </div>
+    <div id="maindiv3">
+        <div id="navborder3">
+            <div id="navborder4">
+                <h1 id="text3"><span style="color: #2ea3f2;">›</span>AN EXCEPTIONAL ALTERNATIVE<span
+                        style="color: #2ea3f2;">‹</span></h1>
+
+                </p>
+            </div>
+            <div id="navborder5">
+                <p id="ptext">Nowadays, time is extremely valuable. FLARIS LAR 1 goes to war with long and tiring
+                    travels and <br>
+                    baggage claims. It is an answer to the challenges of modern transportation. It is an alternative
+                    <br> to congested highways and cruise flights.
+            </div>
+        </div>
+        <div id="divbox1"><img id="img1" src="290611577_139287222101890_6790155899189441362_n.jpg" alt=""></div>
+        <div id="divbox2">
+            <div id="navborder6">
+                <h4 id="text4">Independence</h4>
+                <div id="navborder7">
+                    <p id="ptext2">You gain a new dimension of freedom <br> by investing in LAR 01. Thanks to its
+                        ability <br> to operate on
+                        grass airstrips, Flaris allows <br> you to avoid large airports and get closer <br> to your
+                        destination point. There
+                        are over <br> 10,000 aeroclubs and 45,000 grass airstrips <br> in the world. Flaris needs just
+                        200 m of <br> paved runway
+                        to takeoff and 250 m to land. <br> We have 124 airstrips and 62 civilian airports <br> in
+                        Poland, according to the
+                        Register of <br> Aerodromes and Airstrips (ULC) as of the 5th of <br> April 2019.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="maindiv4">
+        <div id="divbox3">
+            <div id="navborder8">
+                <h4 id="text4">The Earth becomes smaller</h4>
+                <p id="ptext3">Such flexibility is not achievable with any other jet aircraft in the world.</p>
+                <div id="divbox4"><img id="img1" src="292156281_1149526388938148_35375259042819739_n-1.jpg" alt=""
+                        srcset=""></div>
+            </div>
+        </div>
+    </div>
+    <div id="maindiv5">
+        <div id="divbox5"><img id="img1" src="nasza_historia.jpg" alt="">
+            <div id="divbox6">
+                <div id="navborder9">
+                    <h4 id="text4">Economy</h4>
+                    <p id="ptext3">LAR 01 is unparalleled in terms of purchase and <br> exploitation costs. Operating
+                        cost: 1,2 $/nm, or 450 <br> $/hour</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="maindiv6">
+        <div id="divbox7">
+            <div id="navborder9">
+                <h4 id="text4">Convenience</h4>
+                <p id="ptext3">LAR 01 meets the communication needs of the business world. It will quickly and
+                    comfortably get you to any destination. It is an option for private individuals who value their time
+                    and the comfort of travel as well. Taking off from aeroclub airstrips allows you to save the time
+                    spent on getting to the airport and customs procedures. You will also land closer to your
+                    destination.</p>
+            </div>
+        </div>
+        <div id="divbox8"><img id="img1" src="zalety_wygoda.jpg" alt=""></div>
+    </div>
+    <div id="maindiv7">
+        <div id="divbox9">
+            <div id="chlid"></div>
+            <div id="chlid2">
+                <div id="borderchlid">
+                    <h1 id="heading"><span style="color: #2ea3f2;">›</span> PURCHASE</h1>
+                </div>
+                <div id="textbar">
+                    <p id="ptext4">Purchasing LAR 01 is the most complete and apparent way to own an <br> aircraft. It
+                        is especially popular among corporate clientele, <br> service groups and medium-sized companies,
+                        and individual <br> clients. In many countries, such investment can be amortised <br> through
+                        advantageous tax deductions.</p>
+                    <button id="bt1">Learn more ></button>
+                </div>
+            </div>
+        </div>
+        <div id="divbox10">
+            <div id="chlid2">
+                <div id="borderchlid2">
+                    <h1 id="heading"> <span style="color: #2ea3f2;">›</span>LEASING</h1>
+                </div>
+                <div id="textbar">
+                    <p id="ptext4">A form of usage attractive to companies that do not want to or are <br> not able to
+                        purchase a jet. Leasing allows using the LAR 01 <br> in a periodic payment system. After a fixed
+                        period, it is possible <br> to acquire the aircraft and include it into the assets of your <br>
+                        company.</p><button id="bt1">Learn more ></button>
+            
+            
+            
+                    </div>
+            </div>
+            <div id="chlid3">
+                
+            </div>
+
+
+
+
+            <div id="divbox11">
+                <div id="chlid4"></div>
+                <div id="chlid2">
+                    <div id="borderchlid">
+                        <h1 id="heading"> <span style="color: #2ea3f2;">›</span>RENTAL</h1>
+                    </div>
+                    <div id="textbar">
+                        <p id="ptext4">An ideal option for corporate and individual clients who only <br> occasionally
+                            use private aircraft transport. It is possible to pilot the <br> jet or use the services of
+                            professional pilots, depending on the <br> qualifications of the client. In the latter case,
+                            rental resembles an <br> air taxi service. .</p><button id="bt1">Learn more ></button>
+
+
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+        </div>
+
+
+</body>
+
+</html>
